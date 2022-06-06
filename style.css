@@ -13,7 +13,6 @@ body {
     color: green;
 }
 
-
 .grid {
     display: grid;
     place-items: center;
@@ -28,13 +27,6 @@ body {
     width: 80%;
     display: grid;
     place-items: center;
-}
-
-.header {
-    color: rgb(14, 248, 119);
-    text-align: center;
-    font-size: 50px;
-    font-style: arial;
 }
 .welcome-message {
     color: white;
@@ -105,18 +97,50 @@ body {
     font-style: italic;
     text-underline-offset: 6;
 }
+.nomobile {
+    color: white;
+}
 @media only screen and (max-width: 600px) {
-    .grid{
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0;
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0;
     }
-    .nomobile{
+    .nomobile {
         display: none;
     }
-    .grid2{
+    .grid2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;    
+    }
+    .grid3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0;
     }
-  }
+}
+.header {
+    color: rgb(14, 248, 119);
+    text-align: center;
+    font-size: 50px;
+    font-style: arial;
+}
+.Social-Media {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+
+}
+.grid3{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.bigtext{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}

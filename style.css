@@ -105,9 +105,6 @@ body {
     font-style: italic;
     text-underline-offset: 6;
 }
-.mobiletext {
-    display: none;
-}
 @media only screen and (max-width: 600px) {
     .grid{
     grid-template-columns: 1fr 1fr ;

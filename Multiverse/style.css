@@ -33,3 +33,8 @@ body {
     background-color: #3414ee;
     color: rgb(0, 0, 0);
 }
+@media only screen and (max-width: 600px) {
+    .Multiverse{
+        display: none;
+    }
+}

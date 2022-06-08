@@ -38,3 +38,18 @@ body {
         display: none;
     }
 }
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}
+.centerheader{
+    text-align: left;
+    font-size: 40px;
+}
+.bottomtext{
+    font-size: 20px;
+    cursor: pointer;
+}

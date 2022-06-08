@@ -1,0 +1,35 @@
+.font {
+    font-size: 30px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.font_ {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.button {
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3414ee;
+}
+
+.button1:hover {
+    background-color: #3414ee;
+    color: rgb(0, 0, 0);
+}

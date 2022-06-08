@@ -8,11 +8,11 @@
     font-size: 20px;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 231, 231);
 }
 .button {
     border: none;
-    color: white;
+    color: rgb(231, 231, 231);
     padding: 8px 24px;
     text-align: center;
     text-decoration: none;
@@ -24,14 +24,14 @@ body {
 }
 
 .button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #3414ee;
+    background-color: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
+    border: 2px solid #454546;
 }
 
 .button1:hover {
     background-color: #3414ee;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 600px) {
     .Multiverse{
@@ -48,8 +48,10 @@ body {
 .centerheader{
     text-align: left;
     font-size: 40px;
+    color: rgb(0, 0, 0);
 }
 .bottomtext{
     font-size: 20px;
     cursor: pointer;
+    color: rgb(0, 0, 0);
 }

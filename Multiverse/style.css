@@ -62,3 +62,14 @@ body {
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
+.grid2{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-items: center;
+    background-color: red;
+}
+.headertext{
+    font-size: 30px;
+    gap: 0px;
+}

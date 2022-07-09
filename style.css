@@ -17,7 +17,8 @@ body {
     display: grid;
     place-items: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 5em;
 }
 
@@ -31,7 +32,7 @@ body {
 .welcome-message {
     color: white;
     text-align: center;
-    font-style: italic;
+    font-style: normal;
     font-size: 24px;
 }
 .click-on-me {
@@ -143,4 +144,12 @@ body {
     font-size: 20px;
     color: white;
     text-align: center;
+}
+.cursor {
+    cursor: pointer;
+}
+.border{
+    border: solid white;
+    border-radius: 1cm;
+    background-color: black;
 }

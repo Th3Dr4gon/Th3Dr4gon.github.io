@@ -103,9 +103,12 @@ body {
 }
 @media only screen and (max-width: 600px) {
     .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 70% !important;
+        place-items: center;
         gap: 0;
+        margin: auto;
     }
     .nomobile {
         display: none;
@@ -114,13 +117,27 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0;
+        margin: auto;
     }
     .grid3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0;
+        margin: auto;
     }
+    .border{
+    border: 0.25cm solid #ffffff;
+    border-radius: 1cm;
+    box-shadow: 0 0 0.5cm rgb(255, 255, 255);
 }
+.steam{
+    width: 80% !important;
+}
+.github{
+    width: 78% !important;
+}
+}
+
 .header {
     color: rgb(14, 248, 119);
     text-align: center;
@@ -146,9 +163,4 @@ body {
 }
 .cursor {
     cursor: pointer;
-}
-.border{
-    border: solid white;
-    border-radius: 1cm;
-    background-color: black;
 }

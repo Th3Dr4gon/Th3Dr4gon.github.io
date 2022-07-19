@@ -114,28 +114,36 @@ body {
         display: none;
     }
     .grid2 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,3cm);
         gap: 0;
-        margin: auto;
+        margin: auto;   
+        place-items: center;
     }
     .grid3 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(2,1fr);
+        gap: 2cm;
         margin: auto;
+        place-items: center;
     }
     .border{
     border: 0.25cm solid #ffffff;
     border-radius: 1cm;
     box-shadow: 0 0 0.5cm rgb(255, 255, 255);
+    }
+    .download{
+        grid-row: 2;
+    }
+    .download2{
+        grid-row: 4;
+    }
 }
 .steam{
     width: 80% !important;
 }
 .github{
     width: 78% !important;
-}
 }
 
 .header {

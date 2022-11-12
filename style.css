@@ -1,51 +1,37 @@
 body {
-    background-color: rgb(3, 3, 3);
-    margin: 0;
+  background-color: lightblue;
 }
-
-.red {
-    color: red;
+.header {
+  text-align: center;
+  font-size: 42px;
 }
-.blue {
-    color: blue;
+.subheader {
+  text-align: center;
+  font-size: 22px;
 }
-.green {
-    color: green;
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat 1fr;
 }
-
-.grid {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    grid-template-columns:repeat(4, 1fr);
-    gap: 5em;
+.header2 {
+  text-align: center;
+  font-size: 36px;
 }
-
-.grid > a,
-.grid > img,
-.grid > a > img {
-    width: 80%;
-    display: grid;
-    place-items: center;
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 18em);
 }
-.welcome-message {
-    color: white;
-    text-align: center;
-    font-style: normal;
-    font-size: 24px;
+.grid2 > a,
+.grid2 > img,
+.grid2 > a > img {
+  width: 75%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  margin: auto;
 }
-.click-on-me {
-    color: blue;
-    font-style: normal;
-    font-size: 24px;
-}
-.th3dr4gon {
-    color: white;
-    text-align: center;
-    font-style: normal;
-    font-size: large;
-}
-
 .button {
     border: none;
     color: rgb(7, 7, 7);
@@ -60,8 +46,8 @@ body {
 }
 
 .button1 {
-    background-color: rgb(8, 8, 8);
-    color: rgba(255, 255, 255, 0.774);
+    background-color: lightblue;
+    color: black;
     border: 2px solid #4caf50 !important;
     align-items: center;
 }
@@ -70,105 +56,14 @@ body {
     background-color: #4caf50;
     color: rgb(12, 11, 11);
 }
-.knopf {
-    align-self: center;
-}
-.text {
-    color: white;
+.downloads{
     text-align: center;
-}
-.projects {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-}
-.grid2 {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 40px;
-    gap: 10px;
-}
-.grid2 > img {
-    width: 50%;
-}
-.text2 {
-    font-style: italic;
-    text-underline-offset: 6;
-}
-.nomobile {
-    color: white;
-}
-@media only screen and (max-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        width: 70% !important;
-        place-items: center;
-        gap: 0;
-        margin: auto;
-    }
-    .nomobile {
-        display: none;
-    }
-    .grid2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,3cm);
-        gap: 0;
-        margin: auto;   
-        place-items: center;
-    }
-    .grid3 {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: repeat(2,1fr);
-        gap: 2cm;
-        margin: auto;
-        place-items: center;
-    }
-    .border{
-    border: 0.25cm solid #ffffff;
-    border-radius: 1cm;
-    box-shadow: 0 0 0.5cm rgb(255, 255, 255);
-    }
-    .download{
-        grid-row: 2;
-    }
-    .download2{
-        grid-row: 4;
-    }
-}
-.steam{
-    width: 80% !important;
-}
-.github{
-    width: 78% !important;
-}
-
-.header {
-    color: rgb(14, 248, 119);
-    text-align: center;
-    font-size: 50px;
-    font-style: arial;
-}
-.Social-Media {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 25px;
 }
 .grid3 {
     display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(2,1fr);
+    gap: 2cm;
+    margin: auto;
     place-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-}
-.bigtext {
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-.cursor {
-    cursor: pointer;
 }

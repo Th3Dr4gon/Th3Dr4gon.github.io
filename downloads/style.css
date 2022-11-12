@@ -1,15 +1,14 @@
 body {
-    background-color: rgb(0, 0, 0);
-}
+    background-color: lightblue}
 .header {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 40px;
 }
 .header2 {
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 .grid {
     display: grid;
@@ -29,7 +28,7 @@ body {
 }
 .button {
     border: none;
-    color: rgb(7, 7, 7);
+    color: lightblue;
     padding: 12px 48px;
     text-align: center;
     text-decoration: none;
@@ -41,15 +40,15 @@ body {
 }
 
 .button1 {
-    background-color: rgb(8, 8, 8);
-    color: rgba(255, 255, 255, 0.774);
+    background-color: lightblue;
+    color: rgba(0, 0, 0, 0.774);
     border: 2px solid #4caf50 !important;
     align-items: center;
 }
 
 .button1:hover {
     background-color: #4caf50;
-    color: rgb(12, 11, 11);
+    color: rgb(255, 255, 255);
 }
 .text {
     text-align: center;
@@ -59,8 +58,23 @@ body {
 }
 .header3 {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
+}
+.grid2{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 5em;
+}
+.grid2 > a,
+.grid2 > img,
+.grid2 > a > img {
+    width: 80%;
+    display: grid;
+    place-items: center;
 }
 @media only screen and (max-width: 600px){
     .grid{

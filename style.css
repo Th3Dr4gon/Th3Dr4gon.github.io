@@ -1,40 +1,54 @@
 body {
   background-color: lightblue;
+  margin: 0;
+  padding: 50px 0;
 }
 .header {
   text-align: center;
   font-size: 42px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0;
 }
 .subheader {
   text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+  font-weight: bold;
   font-size: 22px;
 }
-.grid1 {
+
+.tables {
+  margin: 80px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
-.header2 {
-  text-align: center;
-  font-size: 36px;
+@media only screen and (max-width: 600px) {
+  .tables {
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
 }
-.grid2 {
+
+.tables > * > .grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 18em);
-}
-.grid2 > a,
-.grid2 > img,
-.grid2 > a > img {
-  width: 75%;
-  display: grid;
+  gap: 20px;
   place-items: center;
-  cursor: pointer;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
-.button {
-    border: none;
-    color: rgb(7, 7, 7);
+.tables > * > .grid > *,
+.tables > * > .grid > * > * {
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
     padding: 2px 4px;
     text-align: center;
     text-decoration: none;
@@ -43,27 +57,20 @@ body {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-}
-
-.button1 {
     background-color: lightblue;
     color: black;
     border: 2px solid #4caf50 !important;
     align-items: center;
+    margin: 20px;
 }
 
-.button1:hover {
+button:hover {
     background-color: #4caf50;
     color: rgb(12, 11, 11);
 }
-.downloads{
-    text-align: center;
-}
-.grid3 {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: repeat(2,1fr);
-    gap: 2cm;
-    margin: auto;
-    place-items: center;
+
+.centerGrid {
+  display: grid;
+  width: 100%;
+  place-items: center;
 }

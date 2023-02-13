@@ -14,9 +14,9 @@ body {
     display: grid;
     place-items: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 45px);
+    gap: 10px;
 }
 
 .grid > a,
@@ -49,37 +49,4 @@ body {
 .button1:hover {
     background-color: #4caf50;
     color: rgb(255, 255, 255);
-}
-.text {
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
-.header3 {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-.grid2{
-    display: grid;
-    place-items: center;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-    gap: 5em;
-}
-.grid2 > a,
-.grid2 > img,
-.grid2 > a > img {
-    width: 80%;
-    display: grid;
-    place-items: center;
-}
-@media only screen and (max-width: 600px){
-    .grid{
-        grid-template-columns: 1fr;
-        gap: none;
-        font-size: 20px;
-    }
 }

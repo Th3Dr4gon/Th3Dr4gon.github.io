@@ -49,24 +49,24 @@ body {
 }
 
 button {
-    padding: 2px 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lightblue;
-    color: black;
-    border: 2px solid #4caf50 !important;
-    align-items: center;
-    margin: 20px;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: lightblue;
+  color: black;
+  border: 2px solid #4caf50 !important;
+  align-items: center;
+  margin: 20px;
 }
 
 button:hover {
-    background-color: #4caf50;
-    color: rgb(12, 11, 11);
+  background-color: #4caf50;
+  color: rgb(12, 11, 11);
 }
 
 .centerGrid {

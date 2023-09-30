@@ -1,53 +1,43 @@
 body {
   background-color: lightblue;
-  margin: 0;
-  padding: 50px 0;
 }
-.header {
-  text-align: center;
-  font-size: 42px;
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 0;
-}
-.subheader {
-  text-align: center;
-  font-size: 33px;
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 0;
-}
-
-.description {
-  text-align: center;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.tables {
-  margin: 80px;
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: auto;
+  margin-top: 150px;
+  gap: 5px;
 }
-@media only screen and (max-width: 600px) {
-  .tables {
-    grid-template-columns: repeat(auto-fit, 100%);
-  }
-}
-
-.tables > * > .grid {
-  width: 100%;
+.grid > a,
+.grid > img,
+.grid > a > img {
   display: grid;
-  gap: 20px;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
 }
-.tables > * > .grid > *,
-.tables > * > .grid > * > * {
-  width: 100%;
-  cursor: pointer;
-}
+img {
+  border: solid 0.2em black;
 
+  border-radius: 1cm;
+  box-shadow: 0 0 1em #000000;
+  transition-duration: 0.7s;
+  margin: auto;
+}
+img:hover {
+  background-color: #00000050;
+  color: rgb(12, 11, 11);
+  transform: rotate(6deg);
+}
+.centerGrid {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  margin: auto;
+}
 button {
   padding: 2px 4px;
   text-align: center;
@@ -68,9 +58,28 @@ button:hover {
   background-color: #4caf50;
   color: rgb(12, 11, 11);
 }
-
-.centerGrid {
-  display: grid;
-  width: 100%;
-  place-items: center;
+#gcord {
+  grid-column: 2;
+  grid-row: 1;
+}
+#github {
+  grid-column: 1;
+  grid-row: 2;
+}
+#steam {
+  grid-column: 2;
+  grid-row: 3;
+}
+#steam > img:hover {
+  transform: rotate(-6deg);
+}
+#discord {
+  grid-column: 3;
+  grid-row: 2;
+}
+#discord > img:hover {
+  transform: rotate(-6deg);
+}
+.nodesktop{
+  display: none;
 }

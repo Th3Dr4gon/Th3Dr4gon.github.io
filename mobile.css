@@ -1,0 +1,53 @@
+body {
+    background: lightblue;
+    margin: 0;
+    min-height: 100svh;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2em;
+  }
+  .grid > a,
+  .grid > img,
+  .grid > a > img {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .centerGrid {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    margin: auto;
+  }
+  #avatar {
+    display: none;
+  }
+  img {
+    border: solid 0.2em black;
+  
+    border-radius: 1cm;
+    box-shadow: 0 0 1em #000000;
+  }
+  
+  button {
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    border: 2px solid #4caf50 !important;
+    align-items: center;
+    margin: 20px;
+  }

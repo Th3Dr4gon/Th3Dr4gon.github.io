@@ -73,6 +73,7 @@ button:hover {
 #discord {
   grid-column: 3;
   grid-row: 2;
+  cursor: pointer;
 }
 .nodesktop{
   display: none;

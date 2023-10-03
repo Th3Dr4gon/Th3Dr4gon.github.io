@@ -49,4 +49,5 @@ body {
 .button1:hover {
     background-color: #4caf50;
     color: rgb(255, 255, 255);
+    transform: scale(110%);
 }

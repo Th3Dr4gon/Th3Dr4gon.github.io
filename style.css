@@ -30,7 +30,7 @@ img {
 img:hover {
   background-color: #00000050;
   color: rgb(12, 11, 11);
-  transform: rotate(6deg);
+  transform: scale(110%);
 }
 .centerGrid {
   display: grid;
@@ -70,15 +70,9 @@ button:hover {
   grid-column: 2;
   grid-row: 3;
 }
-#steam > img:hover {
-  transform: rotate(-6deg);
-}
 #discord {
   grid-column: 3;
   grid-row: 2;
-}
-#discord > img:hover {
-  transform: rotate(-6deg);
 }
 .nodesktop{
   display: none;

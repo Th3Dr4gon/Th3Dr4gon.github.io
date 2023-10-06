@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue}
+.header {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+.grid {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.grid > a,
+.grid > img,
+.grid > a > img {
+    width: 80%;
+    display: grid;
+    place-items: center;
+}
+.button1 {
+    background-color: lightblue;
+    color: rgba(0, 0, 0, 0.774);
+    border: 2px solid #4caf50 !important;
+    align-items: center;
+}
